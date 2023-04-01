@@ -1,0 +1,69 @@
+
+table, th, td {    
+    border: 5px solid black;  
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    width: 500px;
+    height: 30px;  
+    text-align: center;  
+    font-size: 20px;
+    position: relative;
+    }    
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#rip.center {
+    position: relative;
+    top: 450px;
+}
+
+
+#stop.CENTER{
+    position: relative;
+    top: 420px;
+    left:40%
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.photo {
+    display: inline-block;
+    margin: 10px;
+    border: solid 5px rgb(0, 0, 0);
+    background: white;
+    height: 250px;
+    width: 200px;
+    border-radius: 25%;
+  }
+
+
+
+#player1Photo.photo {
+    position: fixed;
+    bottom: 400px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
+#player2Photo.photo {
+  position: fixed;
+  bottom: 400px;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+body {
+  background-image: url('./icons/arena.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+img {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 180px;
+  height: 190px;
+}

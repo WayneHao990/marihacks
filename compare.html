@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Football Player Comparison</title>
+	<script src="compare_source.js"></script>
+  <link rel="stylesheet" href="compare_style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+    <a href="home_page.html" class="w3-bar-item w3-button">Soccer Fantasy Team</a>
+    <img src="./icons/logo.png" alt="Logo" style="padding-top: 0px; padding-left: 0px; height:35px; width:35px">
+
+    <div class="w3-right w3-hide-small">
+        <a href="home_page.html" class="w3-bar-item w3-button">Home</a>
+        <a href="market.html" class="w3-bar-item w3-button">Market</a>
+        <a href="teams.html" class="w3-bar-item w3-button">Team</a>
+        <a href="compare.html" class="w3-bar-item w3-button">Compare</a>
+    </div>
+    </div>
+  </div>
+</head>
+
+<body onload="populateDropdownList('player1'); populateDropdownList('player2');">
+
+  <div class="bg">
+    <div class="left-side"></div>
+</div>
+  
+  <div id="player1Photo" class="photo">
+    <img id="player1Image" src="https://p.kindpng.com/picc/s/52-526798_anonymous-person-transparent-hd-png-download.png" alt="Player 1 Image">
+  </div>
+  <div id="player2Photo" class="photo">
+    <img id="player2Image" src="https://p.kindpng.com/picc/s/52-526798_anonymous-person-transparent-hd-png-download.png" alt="Player 2 Image">
+  </div>
+
+  <div id="stop" class="CENTER">
+    <select id="player1" onchange="comparePlayers()" class="selecting">
+      <option value="" disabled selected style="text-align: center;">Player 1</option>
+    </select>
+    <select id="player2" onchange="comparePlayers()" class = "selecting">
+      <option value="" disabled selected style="text-align: center;">Player 2</option>
+    </select>
+  </div>
+
+
+  <div id="rip" class="center">
+  	<table id="resultTable">
+  		<tr>
+  			<th>Names</th>
+  			<th id = "player1Name"></th>
+  			<th id = "player2Name"></th>
+  		</tr>
+  		<tr>
+  			<td>Nationality</td>
+  			<td id="player1Nationality"></td>
+  			<td id="player2Nationality"></td>
+  		</tr>
+  		<tr>
+  			<td>Age</td>
+  			<td id="player1Age"></td>
+        <td id="player2Age"></td>
+      </tr>
+      <tr>
+          <td>Position</td>
+          <td id="player1Position"></td>
+          <td id="player2Position"></td>
+      </tr>
+          <tr>
+          <td>Match Played</td>
+          <td id="player1Matches"></td>
+          <td id="player2Matches"></td>
+      </tr>
+      <tr>
+        <td>Assists</td>
+        <td id="player1Assists"></td>
+        <td id="player2Assists"></td>
+      </tr>
+      <tr>
+        <td>Goals</td>
+        <td id="player1Goals"></td>
+        <td id="player2Goals"></td>
+      </tr>
+      <tr>
+        <td>Tackles</td>
+        <td id="player1Tackles"></td>
+        <td id="player2Tackles"></td>
+      </tr>
+      <tr>
+        <td>Saves</td>
+        <td id="player1Saves"></td>
+        <td id="player2Saves"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

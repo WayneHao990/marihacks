@@ -1,0 +1,89 @@
+body {
+    background: rgb(255, 255, 255);
+  }
+
+
+  .fill {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/2022_FIFA_World_Cup_France_4%E2%80%931_Australia_-_%287%29_%28cropped%29.jpg/220px-2022_FIFA_World_Cup_France_4%E2%80%931_Australia_-_%287%29_%28cropped%29.jpg');
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+  
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .empty {
+    display: inline-block;
+    margin: 10px;
+    border: solid 5px rgb(0, 0, 0);
+    background: white;
+    height: 250px;
+    width: 200px;
+    border-radius: 80px;
+  }
+  
+  .hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+  }
+
+
+#gk.empty {
+  position: fixed;
+  bottom: 25px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+#player1.empty {
+  position: fixed;
+  bottom: 240px;
+  left: 15%;
+  transform: translateX(-50%)
+}
+
+#player2.empty {
+  position: fixed;
+  bottom: 240px;
+  left: 65%;
+  transform: translateX(-50%)
+}
+
+#player3.empty {
+  position: fixed;
+  bottom: 480px;
+  left: 28%;
+  transform: translateX(-50%)
+}
+
+#player4.empty {
+  position: fixed;
+  bottom: 480px;
+  left: 52%;
+  transform: translateX(-50%)
+}
+
+body {
+  background-image: url('./icons/arena.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%; 
+  height: 100vh; 
+  background-color: #ccc ; 
+  border: 5px solid #000000;
+  box-sizing: border-box; 
+  float: right;
+}
